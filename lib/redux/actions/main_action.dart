@@ -3,3 +3,9 @@ class SetData {
 
   SetData({this.data});
 }
+
+class SetDataName {
+  final String? dataName;
+
+  SetDataName({this.dataName});
+}

@@ -21,6 +21,12 @@ abstract class HomeViewModel extends State<Home> {
   }
 
   @override
+  void dispose() {
+    onClickQuery();
+    super.dispose();
+  }
+
+  @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
